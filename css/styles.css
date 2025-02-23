@@ -1,0 +1,137 @@
+/* IMPORTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* VARIABLES */
+
+:root {
+    font-size: 16px;
+
+    /* colors */
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+
+    /* spacing */
+    --spacing-500: 40px;
+    --spacing-300: 24px;
+    --spacing-200: 16px;
+    --spacing-150: 12px;
+    --spacing-100: 8px;
+    --spacing-50: 4px;
+}
+
+/* Box Sizing */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    font-size: 0.875rem;
+    color: var(--white);
+    text-align: center;
+  }
+
+/* Typography */
+
+.inter-bold-1 {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 150%;
+    letter-spacing: 0px;
+  }
+
+  .inter-bold-2 {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-size: 0.875rem;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 150%;
+    letter-spacing: 0px;
+  }
+
+  .inter-reg {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-size: 0.875rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 150%;
+    letter-spacing: 0px;
+  }
+
+/* STYLES */
+
+.main-container {
+    height: 100vh;
+    width: 100vw;
+    padding: 0px var(--spacing-300);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--grey-900);
+}
+
+.card-container {
+    display: flex;
+    padding: var(--spacing-300);
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-300);
+    flex: 1 0 0;
+}
+
+.profile-pic {
+    height: 5.5rem;
+    width: 5.5rem;
+    border-radius: 50%;
+}
+
+.name-location-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-50);
+}
+
+.name {
+    margin: 0px;
+}
+
+.location {
+    margin: 0px;
+    color: var(--green);
+}
+
+.about-copy {
+    margin: 0px;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-200);
+    align-self: stretch;
+}
+
+.links-container button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    padding: var(--spacing-150);
+    background: var(--grey-700);
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--white);
+}
