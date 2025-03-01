@@ -88,6 +88,8 @@ html {
     align-items: center;
     gap: var(--spacing-300);
     flex: 1 0 0;
+    border-radius: 0.75rem;
+    background: var(--grey-800);
 }
 
 .profile-pic {
@@ -104,10 +106,12 @@ html {
 
 .name {
     margin: 0px;
+    align-self: stretch;
 }
 
 .location {
     margin: 0px;
+    align-self: stretch;
     color: var(--green);
 }
 
@@ -135,3 +139,20 @@ html {
     border-radius: 0.5rem;
     color: var(--white);
 }
+
+/* Media Query for tablet and larger */
+
+@media screen and (min-width: 768px) {
+    
+  .main-container {
+    padding: var(--spacing-500);
+  }
+
+  .card-container {
+    max-width: 24rem;
+    height: auto;
+    padding: var(--spacing-500);
+  }
+
+}
+
